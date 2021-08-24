@@ -9,20 +9,71 @@
     <title> weather app </title>
 </head>
 <body>
+
+    <style class="image">
+        body {
+            background-color: rgb(68, 67, 67);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
     
     
-    <div class="waveWrapper waveAnimation">
-        <div class="waveWrapperInner bgTop">
-            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    <div id="search_box">
+        <input id="search_box_input" type="text" class="search_box_input" placeholder="enter city name">
+        <button id="search_box_button" onclick="check_weather_in_city()" class="search_box_button" type="button"> 🔎 </button>
+    </div>
+
+
+    <div id="weather_app_container">
+
+        <div class="city_name_background" id="city_name_background">
+            <div id="city_name_text" class="city_name_text"> Town Name </div>
         </div>
-        <div class="waveWrapperInner bgMiddle">
-            <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+
+
+
+        <div class="temp_background" id="temp_background">
+            <div id="temp_name_text" class="temp_name_text"> temp: </div>
         </div>
-        <div class="waveWrapperInner bgBottom">
-            <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+
+
+
+        <div class="current_Weather" id="current_Weather">
+            <div id="condtion_name_text" class="temp_name_text"> condtion: </div>
         </div>
+
+
+
+        <div class="weather_details" id="weather_details">
+
+            <div id="wind_name_text" class="weather_details_text"> wind: </div>
+
+            <div id="humidity_name_text" class="weather_details_text"> humidity: </div>
+        
+            <div id="feels_like_name_text" class="weather_details_text"> feels like: </div>
+
         </div>
+
+
+        <div class="c_f_button" id="c_f_button">
+
+            <button onclick="c_f_temp('f')" class="f_button" type="button"> F° </button>
+
+            <button onclick="c_f_temp('c')" class="f_button" type="button"> C° </button>
+
+        </div>
+
+    </div>
+    
     
 
+
+    <script>
+
+    </script>
 </body>
+
+
 </html>

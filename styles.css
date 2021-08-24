@@ -1,69 +1,134 @@
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    top: -1px;
+    vertical-align: baseline;
 }
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
-.waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
-}
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
-}
-.bgMiddle {
+
+.city_name_text {
+    position: relative;
     z-index: 10;
-    opacity: 0.75;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
 }
-.bgBottom {
+
+.search_box_input {
+    margin-top: 20px;
+    right: 44%;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(231, 231, 231);
+}
+
+.search_box_button {
+    margin-top: 20px;
+    right: 41%;
+    position: absolute;
+    z-index: 11;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(56, 128, 211);
+}
+
+.search_box_button:hover {
+    background-color: rgb(76, 151, 236);
+}
+
+.image {
+    height: 200%;
+    width: 150%;
+}
+
+.temp_name_text {
+    margin-top: 30%;
+    position: relative;
+    z-index: 10;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.city_name_background {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    right: 30%;
+    top: 10%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    
+}
+
+.temp_background {
+    position: absolute;
+    text-align: center;
+    width: 19%;
+    right: 51%;
+    top: 22%;
+    height: 25%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+}
+
+.current_Weather {
+    position: absolute;
+    text-align: center;
+    width: 19%;
+    right: 30%;
+    top: 22%;
+    height: 25%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+}
+
+.weather_details {
+    position: absolute;
+    text-align: center;
+    width: 40%;
+    right: 30%;
+    top: 50%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    display: grid;
+}
+
+.weather_details_text {
+    margin-top: 5%;
+    position: relative;
+    font-size: x-large;
+}
+
+.f_button {
+    position: relative;
+    width: 10%;
+    height: 20%;
+    background-color: rgb(48, 41, 41);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 10%;
+}
+
+
+.c_f_button {
+    position: absolute;
+    right: 14%;
+    top: 62%;
+    width: 40%;
+    height: 20%;
     z-index: 5;
 }
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-}
-.waveTop {
-    background-size: 50% 100px;
-}
-.waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
-}
-.waveMiddle {
-    background-size: 50% 120px;
-}
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-}
-.waveBottom {
-    background-size: 50% 100px;
-}
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+.f_button:hover {
+    font-size: large;
 }
