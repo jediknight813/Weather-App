@@ -1,4 +1,4 @@
-a weather website made for the oden project.
+a weather website made for the odin project.
 
 link to the website: https://jediknight813.github.io/Weather-App/
 
